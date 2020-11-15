@@ -1,0 +1,118 @@
+.signup .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.signup main{
+    background: linear-gradient(to right, royalblue, slateblue);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.signup .heading{
+    padding: 2rem;
+}
+
+.signup .heading h4{
+    color: whitesmoke;
+    width: 100%;
+    border: none;
+    margin-left: 3rem;
+
+}
+
+.signup .content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 2rem;
+}
+
+.signup form{
+    background: white;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.signup form .input-section{
+    padding: 1rem;
+}
+
+.signup *{
+    align-self: center;
+}
+
+.signup .input{
+    background: royalblue;
+    display: flex;
+    border-radius: .2rem;
+    margin-bottom: 1rem;
+}
+
+.signup .input div{
+    color: white;
+    padding: .5rem;
+    align-self: center;
+}
+
+.signup .input input{
+    border: 2px solid royalblue;
+    border-radius: .2rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+.signup form button{
+    background: royalblue;
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: .2rem;
+}
+
+.signup form button:hover{
+    background: royalblue radial-gradient(circle, transparent 1%, royalblue.1%) center/15000%;
+}
+
+.signup form button:active{
+    background-color:  whitesmoke;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.signup form .actions{
+    margin-top: 1rem;
+    display: flex;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: whitesmoke;
+}
+
+.signup form .actions p{
+    margin-right: .5rem;
+}
+
+.signup .btn{
+    color: white;
+}
+
+.signup footer{
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1200px){
+    .signup main{
+        margin: 0;
+    }
+
+    .signup .main-side-nav{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: .2rem;
+    }
+
+    .signup .nav-link{
+        border-bottom: 1px solid rgba(65, 105, 225, 0.2);
+    }
+}

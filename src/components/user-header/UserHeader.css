@@ -1,0 +1,45 @@
+.user-header * {
+    align-self: center;
+}
+
+.user-header{
+    z-index: 5;
+    background: white;
+}
+
+.user-header nav{
+    display: flex;
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+}
+
+.user-header .nav-top{
+    display: flex;
+}
+
+.user-header .nav-top .user-pic{
+    border: 2px solid royalblue;
+    border-radius: 50%;
+    margin-right: .5rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.user-header .logout{
+    border-radius: 3rem;
+    color: white;
+    background: royalblue;
+    border: 2px solid royalblue;
+}
+
+.user-header{
+    border-bottom: 1px solid rgba(65, 105, 225, 0.37);
+}
+
+.user-header.onscroll{
+    position: fixed;
+    width: 100%;
+    animation: fade-in .5s linear;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+}

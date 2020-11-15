@@ -1,0 +1,59 @@
+.home .user-sidebar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: white;
+    transform: translateY(-100rem);
+    z-index: 10;
+    transition: 1s;
+}
+
+.home .show-main-side-nav{
+    transform: translateY(0rem);
+}
+
+.home .publish-btn{
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 3rem;
+    width: 3rem;
+    color: royalblue;
+    display: flex;
+}
+
+.home .fa-pen{
+    margin: auto;
+}
+
+@media screen and (min-width: 1200px){
+    .home .user-sidebar{
+        transform: translateY(0);
+        width: 25rem;
+        left: 1rem;
+        top: 5rem;
+        height: max-content;
+    }
+
+    .home .user-pic{
+        display: none;
+    }
+
+    .home .nav-top{
+        display: none;
+    }
+
+    .home main .content{
+        margin: auto;
+        width: 100%;
+    }
+
+    .home .nav-side-space{
+        margin-right: 10rem;
+    }
+
+}

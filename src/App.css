@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*:hover{
+    outline: none;
+}
+
+.intro{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: white;
+    top: 0;
+    display: none;
+    justify-content: center;
+}
+
+.intro .logo{
+    margin: auto;
+}
+
+button{
+    border: none;
+    position: relative;
+    overflow: hidden;
+    padding: .5rem;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background .8s;
+  }
+.ripple:hover {
+    background: white radial-gradient(circle, transparent 1%, rgba(65, 105, 225, 0.2) .1%) center/15000%;
+}
+.ripple:active {
+    background-color: rgba(65, 105, 225, 0.2);
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.item.ripple:hover {
+    background: white radial-gradient(circle, transparent 1%, rgba(65, 105, 225, 0.2) .1%) center/30000%;
+}
+
+.item.ripple:active {
+    background-color: rgba(65, 105, 225, 0.2);
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.index .item:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+.btn{
+    text-decoration: none;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem 1fr));
+}
+
+.sidebar{
+    position: fixed;
+    transform: translateX(-100rem);
+    transition: .5s ;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;    
+    z-index: 10;
+}
+
+.show-main-side-nav{
+    transform: translateX(0rem);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.heading h4{
+    color: royalblue;
+    width: 2rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid royalblue;
+    margin-right: 3rem;
+}
+
+.space-footer-bottom{
+    height: 8rem;
+}
+
+.user-space-footer-bottom{
+    height: 3rem;
+}
+
+.img-loading{
+    background: whitesmoke;
+    height: 100%;
+    width: 100%;
+    animation: load 2s infinite;
+    border-radius: 50%;
+}
+
+.text-loading{
+    background: whitesmoke;
+    border: none;
+    height: 100%;
+    width: 100%;
+    animation: load 2s infinite;
+    border-radius: .5rem;
+}
+
+@keyframes load{
+    25%{
+        opacity: 2.5;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.row{
+    display: flex;
+}
+
+
+.close{
+    display: none;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: .5;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .nav-side-space{
+        width: 25rem;
+    }
+
+    .content{
+        margin-left: 3.8rem;
+    }
+
+    main{
+        display: flex;
+        margin: 2rem;
+    }
+
+    .sidebar{
+        width: 20rem;
+        /* position: relative; */
+        transform: translateX(0);
+        height: 40vh;
+        top: 5rem;
+        left: 2.5rem;
+        border-radius: .5rem;
+    }
+
+}

@@ -1,0 +1,156 @@
+.comment-bar{
+    position: fixed;
+    background: white;
+    top: 4.5rem;
+    height: max-content;
+    width: 100%;
+    border-radius: 2rem 2rem 0rem 0rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(100rem);
+    transition: .5s;
+    height: 100%;
+}
+
+.comments{
+    margin-bottom: .1rem;
+}
+
+.comment-bar .comment-load{
+}
+
+.comment-bar h3{
+    text-align: center;
+    color: royalblue;
+    align-self: center;
+}
+
+.comment-bar .top{
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    z-index: 2;
+    background: white;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.comment-bar .main{
+    overflow: auto;
+    position: relative;
+    /* bottom: 3rem;
+    top: 3rem; */
+    height: 63vh;
+    padding: 1rem;
+
+}
+
+.comment-bar .bottom{
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    bottom: 8.4rem;
+    right: 0;
+    left: 0;
+    padding: .5rem;
+    background: white;
+}
+
+.comment-bar .top button{
+    background: none;
+    color: royalblue;
+    font-size: 1.05rem;
+}
+
+.comment-bar .row{
+    margin-top: 1rem;
+}
+
+.comment-bar .avater img{
+    height: 2rem;
+    width: 2rem;
+    background: whitesmoke;
+    border-radius: 50%;
+    border: 2px solid royalblue;
+}
+
+.comment-bar .comment-content{
+    margin-left: .5rem;
+    background: whitesmoke;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.comment-bar .comment-content h4{
+    color: royalblue;
+    font-size: .8rem;
+}
+
+.comment-bar .text{
+    font-size: .8rem;
+}
+.comment-bar .fa-arrow-right{
+    display: none;
+}
+
+.comment-bar .text-loading{
+    width: 10rem;
+    height: 5rem;
+}
+
+.comment-bar .avater .img-loading{
+    border: none;
+}
+
+.open-commentbar{
+    transform: translate(0, 0);
+}
+
+.comment-bar .body{
+    position: relative;
+    margin-bottom: 3rem;
+    overflow: auto;
+}
+
+.comment-bar .bottom input{
+    border: none;
+    background: whitesmoke;
+    padding: .5rem;
+    border-radius: 3rem;
+    width: 100%;
+}
+
+.comment-bar .bottom button{
+    background: none;
+    color: royalblue;
+    font-size: 1.1rem;
+}
+
+
+@media screen and (min-width:
+640px){
+    .comment-bar{
+        right: 0;
+        width: 25rem;
+        border-radius: 0;
+        transform: translateX(100rem);
+    }
+
+    .comment-bar .fa-arrow-right{
+        display: block;
+    }
+
+    .comment-bar .fa-arrow-down{
+        display: none;
+    }
+
+    .open-commentbar{
+        transform: translate(0, 0);
+    }
+
+}

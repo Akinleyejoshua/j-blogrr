@@ -1,0 +1,39 @@
+.about .heading{
+    padding: 1rem;
+}
+
+.about .content{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .content .text{
+    padding: 2rem;
+    margin: auto;
+}
+
+@media screen and (min-width:640px){
+    .about .content img{
+        width: 25rem;
+        border: 5px solid whitesmoke;
+        margin: auto;
+    }
+
+    .about .content .text{
+        padding: 2rem 10rem;
+        margin: auto;
+    }
+
+    .about .content{
+        margin-left: 8rem;
+    }
+
+    .about .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    
+}

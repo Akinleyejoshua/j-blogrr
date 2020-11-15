@@ -1,0 +1,114 @@
+.signin .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.signin main{
+    background: linear-gradient(to right, royalblue, slateblue);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.signin .heading{
+    padding: 2rem;
+}
+
+.signin .heading h4{
+    color: whitesmoke;
+    width: 100%;
+    border: none;
+    margin-left: 3rem;
+}
+
+.signin .content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-self: flex-start;
+}
+
+.signin form{
+    background: white;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.signin form .input-section{
+    padding: 1rem;
+}
+
+.signin *{
+    align-self: center;
+}
+
+.signin .input{
+    background: royalblue;
+    display: flex;
+    border-radius: .2rem;
+    margin-bottom: 1rem;
+}
+
+.signin .input div{
+    color: white;
+    padding: .5rem;
+    align-self: center;
+}
+
+.signin .input input{
+    border: 2px solid royalblue;
+    border-radius: .2rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+.signin form button{
+    background: royalblue;
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: .2rem;
+}
+
+.signin form button:hover{
+    background: royalblue radial-gradient(circle, transparent 1%, royalblue.1%) center/15000%;
+}
+
+.signin form button:active{
+    background-color:  whitesmoke;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.signin form .actions{
+    margin-top: 1rem;
+    display: flex;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: whitesmoke;
+}
+
+.signin form .actions p{
+    margin-right: .5rem;
+}
+
+.signin .btn{
+    color: white;
+}
+
+@media screen and (min-width: 1200px){
+    .signin main{
+        margin: 0;
+        height: 100%
+    }
+
+    .signin .main-side-nav{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: .2rem;
+    }
+
+    .signin .nav-link{
+        border-bottom: 1px solid rgba(65, 105, 225, 0.2);
+    }
+}

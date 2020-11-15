@@ -1,0 +1,85 @@
+.main-side-nav{
+    background: white;
+    position: relative;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-side-nav *{
+    align-self: center;
+}
+
+.main-side-nav .nav-top{
+    padding: 1rem;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+}
+
+.main-side-nav .brand{
+    margin: auto;
+}
+
+.main-side-nav .nav-body{
+    height: 100%;
+}
+
+.main-side-nav .nav-link{
+    display: flex;
+    text-decoration: none;
+    color: royalblue;
+    padding: 1rem 1.5rem;
+}
+
+.main-side-nav .nav-link i{
+    width: 1.5rem;
+}
+
+.main-side-nav .nav-bottom{
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background: whitesmoke;
+}
+
+.main-side-nav .nav-bottom a{
+    font-size: 1.5rem;
+}
+
+.main-side-nav .nav-bottom a:nth-child(1){
+    color: rgba(0, 0, 0, 0.6);
+}
+.main-side-nav .nav-bottom a:nth-child(2){
+    color: rgb(73, 190, 236);
+}
+.main-side-nav .nav-bottom a:nth-child(3){
+    color: royalblue;
+}
+
+@media screen and (min-width:940px){
+    .main-side-nav .nav-top{
+        display: none;
+    }
+
+    .main-side-nav{
+        box-shadow: 0 0 0;
+    }
+
+    .main-side-nav .nav-link{
+        border-bottom: 1px solid whitesmoke;
+        justify-content: center;
+    }
+
+    .main-side-nav .nav-bottom{
+        border-bottom: 1px solid whitesmoke;
+        background: none;
+    }
+
+    .main-side-nav .nav-link:hover{
+        background: royalblue;
+        color: white;
+    }
+}
+

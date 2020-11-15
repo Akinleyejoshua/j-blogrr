@@ -1,0 +1,111 @@
+.blog-viewer .user-sidebar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: white;
+    transform: translateY(-100rem);
+    z-index: 10;
+    transition: 1s;
+}
+
+.blog-viewer .show-main-side-nav{
+    transform: translateY(0rem);
+}
+
+.blog-viewer .blog-content{
+    padding: 1rem;
+    margin-top: 0rem;
+}
+
+.blog-viewer .top img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid royalblue;
+    background: whitesmoke;
+}
+
+.blog-viewer .top{
+    display: flex;
+    padding: 1rem;
+}
+
+.blog-viewer *{
+    align-self: center;
+}
+
+.blog-viewer .top .name{
+    font-weight: bolder;
+    margin-left: 1rem;
+    color: royalblue;
+}
+
+.blog-viewer .title{
+    color: royalblue;
+    padding: 0rem 1rem;
+}
+
+.blog-viewer .name.text-loading{
+    height: .8rem;
+    width: 5rem;
+    background: whitesmoke;
+}
+
+.blog-viewer .title.text-loading{
+    height: 2rem;
+    width: 10rem;
+    background: whitesmoke;
+    margin: 0 1rem;
+}
+
+.blog-viewer .blog-content.text-loading{
+    margin: 1rem;
+    height: 50vh;
+    width: 20rem;
+}
+
+.blog-viewer .actions{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.blog-viewer .actions button{
+    background: none;
+    color: royalblue;
+    font-size: 1.1rem;
+}
+
+.blog-viewer .actions button i{
+    margin-right: .2rem;
+}
+
+@media screen and (min-width: 1200px){
+    .blog-viewer .user-sidebar{
+        transform: translateY(0);
+        width: 25rem;
+        left: 1rem;
+        top: 5rem;
+        height: max-content;
+    }
+
+    .blog-viewer .user-pic{
+        display: none;
+    }
+
+    .blog-viewer .user-side-nav .nav-top{
+        display: none;
+    }
+
+    .blog-viewer main .content{
+        margin: auto;
+        width: 100%;
+    }
+
+    .blog-viewer .nav-side-space{
+        margin-right: 10rem;
+    }
+
+
+}

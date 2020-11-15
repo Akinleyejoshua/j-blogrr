@@ -1,0 +1,25 @@
+.footer{
+    background: whitesmoke;
+}
+
+.footer div{
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.footer .copy{
+    padding: 1rem 2rem;
+    color: white;
+    background: rgb(43, 52, 63);
+}
+
+@media screen and (min-width: 640px){
+    .footer div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer *{
+        align-self: center;
+    }
+}

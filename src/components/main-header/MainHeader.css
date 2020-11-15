@@ -1,0 +1,62 @@
+.main-header{
+    z-index: 5;
+    background: white;
+    transition: .2s;
+}
+
+.main-header.onscroll{
+    position: fixed;
+    width: 100%;
+    animation: fade-in .5s linear;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+}
+
+.main-header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.main-header .header-left{
+    display: flex;
+}
+
+.main-header *{
+    align-self: center;
+}
+
+.header-left button{
+    color: royalblue;
+    padding: .5rem;
+    margin-right: .5rem;
+}
+
+.main-header button{
+    color: royalblue;
+    font-size: 1.1rem;
+    display: flex;
+    background: none;
+}
+
+.main-header .signin{
+    border: 2px solid royalblue;
+    padding: .25rem .5rem;
+    border-radius: 3rem;
+}
+
+.main-header button p{
+    font-size: .8rem;
+    margin-right: .1rem;
+}
+
+@media screen and (min-width:1200px){
+    .header-left .fa.fa-list-ul{
+        display: none;
+    }
+
+    .main-header nav{
+        padding: 1rem 2rem;
+    }
+}
+

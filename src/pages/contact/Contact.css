@@ -1,0 +1,52 @@
+
+
+.contact .heading{
+    padding: 1rem;
+}
+
+
+.contact .content{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .info img{
+    margin: auto;
+}
+
+.contact .info .data{
+    padding: 1rem;
+}
+
+.contact .info *{
+    align-self: center;
+}
+
+.contact .info .text{
+    display: flex;
+    color: royalblue;
+    margin: .5rem 0;
+}
+
+.info .text i{
+    margin-right: .5rem;
+}
+
+
+@media screen and (min-width:640px){
+    .about .content{
+        margin-left: 8rem;
+    }
+    .contact .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+}

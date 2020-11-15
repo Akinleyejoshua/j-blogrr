@@ -1,0 +1,48 @@
+.my-blog .user-sidebar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: white;
+    transform: translateY(-100rem);
+    z-index: 10;
+    transition: 1s;
+}
+
+.my-blog .show-main-side-nav{
+    transform: translateY(0rem);
+}
+
+.my-blog .blog-card .blog-action .fa-edit{
+    display: block;
+    padding: 0;
+}
+
+@media screen and (min-width: 1200px){
+    .my-blog .user-sidebar{
+        transform: translateY(0);
+        width: 25rem;
+        left: 1rem;
+        top: 5rem;
+        height: max-content;
+    }
+
+    .my-blog .user-pic{
+        display: none;
+    }
+
+    .my-blog .nav-top{
+        display: none;
+    }
+
+    .my-blog main .content{
+        margin: auto;
+        width: 100%;
+    }
+
+    .my-blog .nav-side-space{
+        margin-right: 10rem;
+    }
+
+    
+}

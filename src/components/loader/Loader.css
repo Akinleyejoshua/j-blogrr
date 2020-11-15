@@ -1,0 +1,34 @@
+.loader{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: rgba(65, 105, 225, 0.5);
+    height: .1rem;
+}
+
+.loader .bar{
+    background: royalblue;
+    width: 5rem;
+    animation: loading 4s infinite;
+    height: 100%;
+}
+
+@keyframes loading{
+    25%{
+        width: 10rem;
+        transform: translateX(15rem);
+    }
+    50%{
+        width: 5rem;
+        transform: translateX(5rem);
+    }
+    75%{
+        width: 15rem;
+        transform: translateX(15rem);
+    }
+    100%{
+        width: 2rem;
+        transform: translateX(100rem);
+    }
+}
