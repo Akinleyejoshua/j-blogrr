@@ -9,6 +9,7 @@
     transform: translateY(100rem);
     transition: .5s;
     height: 100%;
+    margin-bottom: 4rem;
 }
 
 .comments{
@@ -54,7 +55,6 @@
     justify-content: space-between;
     /* position: fixed; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    margin-bottom: 4rem;
     right: 0;
     left: 0;
     padding: .5rem;
