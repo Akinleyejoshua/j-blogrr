@@ -2,7 +2,6 @@
     position: fixed;
     background: white;
     top: 4.5rem;
-    height: max-content;
     width: 100%;
     border-radius: 2rem 2rem 0rem 0rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -42,10 +41,7 @@
 
 .comment-bar .main{
     overflow: auto;
-    position: relative;
-    /* bottom: 3rem;
-    top: 3rem; */
-    height: 100vh;
+    height: 60vh;
     padding: 1rem;
 
 }
@@ -53,10 +49,7 @@
 .comment-bar .bottom{
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    right: 0;
-    left: 0;
     padding: .5rem;
     background: white;
 }
