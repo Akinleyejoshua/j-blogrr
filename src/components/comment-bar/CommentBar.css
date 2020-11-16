@@ -41,9 +41,10 @@
 
 .comment-bar .main{
     overflow: auto;
-    height: 100vh;
+    height: 58.5vh;
     padding: 1rem;
-    z-index: -1
+    position: relative;
+    top: -6rem
 }
 
 .comment-bar .bottom{
@@ -52,8 +53,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     padding: .5rem;
     background: white;
-    position: relative;
-    top: -14.6rem
 }
 
 .comment-bar .top button{
