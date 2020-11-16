@@ -9,7 +9,7 @@
     transform: translateY(100rem);
     transition: .5s;
     height: 100%;
-    margin-bottom: 4rem;
+    bottom: 4rem;
 }
 
 .comments{
