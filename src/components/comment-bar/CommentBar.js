@@ -67,8 +67,7 @@ const CommentBar = (props) => {
 
     return(
         <div className={commentbar === true ? "open-commentbar comment-bar" : "comment-bar"}>
-            <div className="body">
-                <div className="top">
+            <div className="top">
                     <h3>Comment({key.length})</h3>
                     <button className="fa fa-arrow-down ripple" onClick={togglecommentbar}></button>
                     <button className="fa fa-arrow-right ripple" onClick={togglecommentbar}></button>
@@ -88,7 +87,6 @@ const CommentBar = (props) => {
                     <input placeholder="comment" onChange={(event) => setCommenttext(event.target.value)}/>
                     <button className="far fa-paper-plane ripple" onClick={sendComment}></button>
                 </div>
-            </div>
         </div>
     )
 }

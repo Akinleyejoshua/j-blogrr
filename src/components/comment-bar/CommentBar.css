@@ -1,21 +1,19 @@
 .comment-bar{
     position: fixed;
     background: white;
-    top: 4.5rem;
+    top: 0rem;
     width: 100%;
     border-radius: 2rem 2rem 0rem 0rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transform: translateY(100rem);
     transition: .5s;
-    height: 100%;
-    bottom: 6rem;
+    bottom: 0rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .comments{
     margin-bottom: .1rem;
-}
-
-.comment-bar .comment-load{
 }
 
 .comment-bar h3{
@@ -27,11 +25,7 @@
 .comment-bar .top{
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    top: 0;
-    right: 0;
-    left: 0;
     padding: .5rem 1rem;
     font-size: .8rem;
     z-index: 2;
@@ -41,9 +35,8 @@
 
 .comment-bar .main{
     overflow: auto;
-    height: 58.5vh;
+    height: 80%;
     padding: 1rem;
-    position: relative;
 }
 
 .comment-bar .bottom{
@@ -52,6 +45,9 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     padding: .5rem;
     background: white;
+    position: absolute;
+    bottom: -.05rem;
+    width: 100%;
 }
 
 .comment-bar .top button{
@@ -102,12 +98,6 @@
 
 .open-commentbar{
     transform: translate(0, 0);
-}
-
-.comment-bar .body{
-    position: relative;
-    margin-bottom: 3rem;
-    overflow: auto;
 }
 
 .comment-bar .bottom input{
