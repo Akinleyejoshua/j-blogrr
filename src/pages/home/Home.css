@@ -20,8 +20,8 @@
     background: transparent;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     color: royalblue;
     display: flex;
 }
