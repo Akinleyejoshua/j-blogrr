@@ -9,7 +9,7 @@
     transition: .5s;
     bottom: 0rem;
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
 }
 
 .comments{
@@ -35,8 +35,9 @@
 
 .comment-bar .main{
     overflow: auto;
-    height: 80%;
+    height: 100%;
     padding: 1rem;
+    background: white;
 }
 
 .comment-bar .bottom{
@@ -46,7 +47,7 @@
     padding: .5rem;
     background: white;
     position: absolute;
-    bottom: -.05rem;
+    bottom: -6.1rem;
     width: 100%;
 }
 

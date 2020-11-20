@@ -15,7 +15,7 @@ const BottomNav = () => {
             </Link>
             <Link to="/my-blog-post" className="btn">
                 <i className="fa fa-blog"></i>
-                <p>Your Blog</p>
+                <p>My Blog</p>
             </Link>
         </div>
     )

@@ -48,7 +48,6 @@ const CommentBar = (props) => {
                 img: profile.profilepic,
                 text: commenttext
             }).then(() => {
-                alert("Comment sent");
                 Firebase().db.ref("posts/" + blogkey + "/comments").limitToLast(1).on("child_added", snapshot => {
                     if (commentrecieved === false){
                         dispatch({
