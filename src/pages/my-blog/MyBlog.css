@@ -13,7 +13,7 @@
     transform: translateY(0rem);
 }
 
-.my-blog .blog-card .blog-action .fa-edit{
+.my-blog .blog-card .blog-action .fa-edit, .my-blog .fa-trash{
     display: block;
     padding: 0;
 }
