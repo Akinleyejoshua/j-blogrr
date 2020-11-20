@@ -90,9 +90,10 @@ const ListBlog = (props) => {
                     </div>
                 </div>
                 <div className="blog-action">
-                    {/* <button className="far fa-heart"></button>
-                    <button className="far fa-share-alt"></button> */}
+                    <button className="far fa-heart"></button>
+                    <button className="fa fa-share-alt"></button>
                     <button className="far fa-edit"></button>
+                    <button className="fa fa-trash"></button>
                     <button onClick={toggleCommentBar} id={items}>
                         <i className="far fa-comment-alt" id={items}></i>
                         {commentlength[i]}
