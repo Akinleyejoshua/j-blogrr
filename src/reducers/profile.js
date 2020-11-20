@@ -10,8 +10,8 @@ const initialState = {
         key: [],
         content: [],
         commentkeylength: [],
-        mounted: false,
-    }
+    },
+    myblogmounted: false,
 }
 
 const profileReducer = (state = initialState, action) => {
@@ -59,10 +59,7 @@ const profileReducer = (state = initialState, action) => {
         case "MOUNT_MYBLOG":
             return {
                 ...state,
-                myBlog: {
-                    ...state,
-                    mounted: true
-                }
+                myblogmounted: action.payload
             }
         default:
             return state
