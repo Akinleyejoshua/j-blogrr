@@ -12,6 +12,7 @@ const MyBlog = () => {
     document.title = "Blogrr | My Blog(s)"
     const sidebar = useSelector(state => state.actions.userSideNav);
     const blog = useSelector(state => state.listblog);
+    const profile = useSelector(state => state.profile);
     const myblog = useSelector(state => state.profile.myBlog);
     const loading = useSelector(state => state.profile.loading);
     const dispatch = useDispatch();
@@ -20,19 +21,22 @@ const MyBlog = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            blog.publisher.map((items, i=+1) => {
-                if (items === username){
-                    dispatch({
-                        type: "GET_MYBLOG",
-                        img: blog.img[i],
-                        publisher: items,
-                        title: blog.title[i],
-                        content: blog.content[i],
-                        key: blog.key[i],
-                        commentkeylength: blog.commentkeylength[i]
-                    })
-                }
-            })  
+            if (profile.myblogmounted === false){
+                blog.publisher.map((items, i=+1) => {
+                    if (items === username){
+                        dispatch({
+                            type: "GET_MYBLOG",
+                            img: blog.img[i],
+                            publisher: items,
+                            title: blog.title[i],
+                            content: blog.content[i],
+                            key: blog.key[i],
+                            commentkeylength: blog.commentkeylength[i]
+                        })
+                       dispatch({type: "MOUNT_MYBLOG", payload: true})
+                    }
+                })  
+            }       
         clearInterval(interval)
         })
         
