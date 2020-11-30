@@ -49,7 +49,8 @@ const Publisher = () => {
     }, [])
 
     const handleContent = (event) => {
-        dispatch({type: "PUBLISH_CONTENT", payload: event.target.parentElement.parentElement.parentElement.innerHTML})
+        // dispatch({type: "PUBLISH_CONTENT", payload: event.target.parentElement.parentElement.parentElement.innerHTML})
+        dispatch({type: "PUBLISH_CONTENT", payload: event.target.value})
     }
 
     const handleTitle = (event) => {
@@ -58,7 +59,7 @@ const Publisher = () => {
 
     const publish = () => {
         if (title === "" || content === ""){
-            alert("Empty Fields")
+            alert("Empty Fields");
         } else {
             Firebase().db.ref("posts/").push({
                 title: title,
@@ -68,7 +69,6 @@ const Publisher = () => {
             }).then(() => {
                 alert("Published")
                 Firebase().db.ref("posts/").limitToLast(1).on("child_added", snapshot => {
-                   
                     dispatch({
                         type: "LOAD_BLOGS",
                         key: snapshot.key,
@@ -77,9 +77,7 @@ const Publisher = () => {
                         content: snapshot.val().content,
                         img: snapshot.val().imgUrl,
                     })
-                        
-                    history.push("/home")
-                         
+                    history.push("/home");        
                 })
             })
         }     
@@ -97,7 +95,7 @@ const Publisher = () => {
                     <div className="heading">
                         <h4>PUBLISHER</h4>
                     </div>
-                    <form>
+                    <form method="dialog">
                         <div className="input">
                             <i>T</i>
                             <input type="text" placeholder="title" onChange={handleTitle}/>
