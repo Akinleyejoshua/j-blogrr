@@ -49,7 +49,7 @@ const ViewBlog = () => {
                     </div>
                     <div className="actions">
                         <button onClick={togglecommentbar}>
-                            <i className="far fa-comment-dots"></i>
+                            <i className="far fa-comment-alt"></i>
                             {blog.commentkey.length}
                         </button>
                     </div>
