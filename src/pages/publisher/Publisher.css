@@ -1,3 +1,123 @@
-.publisher{
-    
+.publisher form{
+    margin: 1rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.publisher form .input{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.publisher form .input i{
+    background: royalblue;
+    font-size: 1.5rem;
+    color: white;
+    width: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius:  .2rem 0 0 .2rem ;
+    place-items: center;
+    font-style: normal;
+}
+
+.publisher .heading{
+    padding: 1rem;
+}
+
+.publisher form .input input{
+    border: 2px solid royalblue;
+    padding: .5rem;
+    width: 100%;
+    border-radius:  0 .2rem .2rem 0 ;
+}
+
+.publisher form #editor{
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: .2rem;
+    height: 100%;
+    padding: .5rem;
+}
+
+.publisher form textarea{
+    margin-bottom: 1rem;
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: .2rem;
+    height: 30vh;
+    padding: .5rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.publisher .editor-panel{
+    display: flex;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+
+.publisher form button{
+    padding: 1rem;
+    color: royalblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: .2rem;
+}
+
+.publisher .editor-panel h5{
+    text-align: center;
+    padding: 1rem;
+    background: royalblue;
+    color: white;
+    display: none;
+}
+
+.publisher #advance-editor{
+    display: none;
+}
+
+.publisher .user-sidebar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: white;
+    transform: translateY(-100rem);
+    z-index: 10;
+    transition: 1s;
+}
+
+.publisher .show-main-side-nav{
+    transform: translateY(0rem);
+}
+
+@media screen and (min-width: 1200px){
+    .publisher .user-sidebar{
+        transform: translateY(0);
+        width: 25rem;
+        left: 1rem;
+        top: 5rem;
+        height: max-content;
+    }
+
+    .publisher .user-pic{
+        display: none;
+    }
+
+    .publisher .nav-top{
+        display: none;
+    }
+
+    .publisher main .content{
+        margin: auto;
+        width: 100%;
+    }
+
+    .publisher .nav-side-space{
+        margin-right: 10rem;
+    }
+
 }
