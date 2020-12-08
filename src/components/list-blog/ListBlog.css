@@ -2,7 +2,7 @@
     display: flex;
     padding: 1rem 1rem 0 1rem;
     position: relative;
-    border-bottom: 2px solid rgba(65, 105, 225, 0.2);
+    /* border-bottom: 2px solid rgba(65, 105, 225, 0.2); */
     width: 100%;
     background: none;
     /* cursor: pointer; */
@@ -15,8 +15,8 @@
 
 .blog-card .avater{
     display: flex;
-    justify-content: center;
     margin-right: .5rem;
+    flex-direction: column;
 }
 
 .blog-card .avater img{
@@ -28,12 +28,13 @@
 }
 
 .blog-card .avater .v-line{
-    position: absolute;
+    position: relative;
     height: 100%;
     width: .12rem;
     background: rgba(65, 105, 225, 0.2);
     z-index: -1;
-    bottom: 0;
+    margin: 1rem auto;
+    border-radius: 10rem;
 }
 
 .blog-card .blog-content{

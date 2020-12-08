@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import "./ListBlog.css";
 import {useDispatch} from "react-redux";
 import {useHistory} from "react-router";
@@ -77,15 +78,14 @@ const ListBlog = (props) => {
     const listblog = key.map((items, i =+ 1) =>
         <div className="blog-card" key={items}>
             <div className="avater">
-                <div className="v-line"></div>
                 <img alt="" src={img[i]}/>
+                <div className="v-line"></div>
             </div>
             <div className="blog-content">
                 <div className="blog-data">
                     <div className="name">{publisher[i]}</div>
                     <div className="title">{title[i]}</div>
                     <div className="content">
-                        <div className="blog-bg" id={items} onClick={view}></div>
                         {content[i]}
                     </div>
                 </div>
