@@ -26,6 +26,13 @@ const ViewBlog = () => {
         dispatch({type: "TOGGLE_COMMENT_BAR", payload: true})
     }
 
+    const toHTML = (str) => {
+        const doc = new DOMParser();
+        const newdoc = doc.parseFromString(content, "text/html");
+        return newdoc.firstElementChild.innerText;
+    }
+
+
     return(
         <div className="blog-viewer">
             <Header />
@@ -37,7 +44,7 @@ const ViewBlog = () => {
                 <div className="content" key={key}>
                     <div className="top">
                         <div className="avater">
-                            <img alt="" src={img} className={loading === true ? "img-loading": ""}/>
+                            <img src={img} className={loading === true ? "img-loading": ""}/>
                         </div>
                         <h4 className={loading === true ? "name text-loading" : "name"}>{publisher}</h4>
                     </div>
@@ -45,7 +52,7 @@ const ViewBlog = () => {
                     <h1 className={loading === true ? "title text-loading": "title"}>{title}</h1>
 
                     <div className={loading === true ? "blog-content text-loading" : "blog-content"} onClick={togglecommentbar}>
-                        {content}
+                        {toHTML(content)}
                     </div>
                     <div className="actions">
                         <button onClick={togglecommentbar}>

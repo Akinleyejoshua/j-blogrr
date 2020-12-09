@@ -24,6 +24,7 @@
     border-radius: 50%;
     border: 2px solid royalblue;
     background: whitesmoke;
+    outline: none;
 }
 
 .blog-viewer .top{
