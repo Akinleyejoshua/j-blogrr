@@ -38,6 +38,11 @@
     align-self: center;
 }
 
+.search main{
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width: 1200px){
     .search .user-sidebar{
         transform: translateY(0);
@@ -55,13 +60,14 @@
         display: none;
     }
 
+    .search main{
+        margin-left: 28rem;
+
+    }
+
     .search main .content{
         margin: auto;
         width: 100%;
-    }
-
-    .search .nav-side-space{
-        margin-right: 10rem;
     }
 
 }

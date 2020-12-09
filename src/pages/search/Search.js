@@ -67,13 +67,12 @@ const Search = () => {
     return(
         <div className="search">
             <Header />
+            <div className={sidebar === true ? "user-sidebar show-main-side-nav": "user-sidebar"}>
+                <UserSideNav />
+            </div>
             <main>
-                <div className={sidebar === true ? "user-sidebar show-main-side-nav": "user-sidebar"}>
-                    <UserSideNav />
-                </div>
-                <div className="nav-side-space"></div>
                 <div className="content">
-                <div className="search-bar">
+                    <div className="search-bar">
                         <input placeholder="search" type="text" onChange={handleSearch}/>
                         <button className="fa fa-search ripple"></button>
                     </div>
