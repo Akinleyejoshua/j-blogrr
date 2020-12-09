@@ -86,6 +86,7 @@ const ListBlog = (props) => {
                     <div className="name">{publisher[i]}</div>
                     <div className="title">{title[i]}</div>
                     <div className="content">
+                        <div className="blog-bg" onClick={view} id={items}></div>
                         {content[i]}
                     </div>
                 </div>

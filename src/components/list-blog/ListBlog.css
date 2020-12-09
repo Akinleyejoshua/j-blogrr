@@ -22,9 +22,11 @@
 .blog-card .avater img{
     width: 3rem;
     height: 3rem;
+    min-height: 3rem;
     border-radius: 50%;
     border: 2px solid royalblue;
     background: whitesmoke;
+    margin-bottom: 1rem
 }
 
 .blog-card .avater .v-line{
@@ -33,7 +35,7 @@
     width: .12rem;
     background: rgba(65, 105, 225, 0.2);
     z-index: -1;
-    margin: 1rem auto;
+    margin: auto;
     border-radius: 10rem;
 }
 
